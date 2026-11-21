@@ -4,8 +4,8 @@
   "title": "[PILL PACK] Redrawn Bendy",
   "author": "Nick Vogel",
   "status": "extracted_verified",
-  "acquisition": "existing_steam_client_installation",
-  "steamcmd_download_completed": false,
+  "acquisition": "steamcmd",
+  "steamcmd_download_completed": true,
   "source_workshop_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3610339609",
   "source_archive_sha256": "8db2e726c9baa68d5af4531b362d85dd0dd0fc59d38669ad9e415f0572d3a56c",
   "gma_header": {
