@@ -1,12 +1,9 @@
 {
-  "ignore": [
-    "ogg"
-  ],
+  "title": "[PILL PACK] Redrawn Bendy",
+  "type": "npc",
   "tags": [
     "roleplay",
-    "scenic",
-    "movie"
+    "scenic"
   ],
-  "title": "[PILL PACK] Redrawn Bendy",
-  "type": "npc"
+  "ignore": []
 }
