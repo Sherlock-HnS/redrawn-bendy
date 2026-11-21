@@ -1,0 +1,8 @@
+"VertexlitGeneric"
+{
+    "$basetexture" "models/gentoi/anologhorror/redrawn_bendy/cardboard/CardboardInky"
+    "$bumpmap"     "models/gentoi/anologhorror/redrawn_bendy/shared"
+
+"$translucent" "1"
+    "$nocull" "1"
+}

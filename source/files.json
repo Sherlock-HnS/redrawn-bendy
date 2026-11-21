@@ -1,0 +1,386 @@
+[
+  {
+    "path": "lua/autorun/redrawn_ah_start.lua",
+    "size": 11767,
+    "crc": 338770784,
+    "sha256": "82c1955bc3ed7722dd0b5e97339372d9021436d1e32854b97926ed9123f2dae1"
+  },
+  {
+    "path": "lua/autorun/include/pill_redrawnbattleisland.lua",
+    "size": 114974,
+    "crc": 1888067809,
+    "sha256": "b00f813d71bf1c599ac1f13e6c665d77c5663a8baf193fed12612ee321f97782"
+  },
+  {
+    "path": "lua/effects/redrawn_effects_effects.lua",
+    "size": 3032,
+    "crc": 2901185324,
+    "sha256": "60b4d37422acd597e7ddc74f3c2903aa24d9dc3a3b378e731d5d7a7fe8c6733a"
+  },
+  {
+    "path": "materials/icons/redrawn/bloodthing.png",
+    "size": 404030,
+    "crc": 3864137590,
+    "sha256": "c3e4a70b8497aa1da06f6c178a44e916c386b3e4d4ec2888543518f485383213"
+  },
+  {
+    "path": "materials/icons/redrawn/imag1icon.png",
+    "size": 776815,
+    "crc": 407214984,
+    "sha256": "4eaf7b8c98c7b787db6d3da939cc17a6e81aae8042ffd1619d634adeb199650c"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/redrawn_bendy/bowtiebaked.vmt",
+    "size": 521,
+    "crc": 1296916735,
+    "sha256": "130eb2b494e323ce9e8239c4c42ea46d5988e1aeafdc2dfed02e715e261ed789"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/redrawn_bendy/buttoneyebaked.vmt",
+    "size": 522,
+    "crc": 405343179,
+    "sha256": "0db0e1a39ea50864a513aeba53c8f65d0b0185b427cb0226bac889cb2f60b394"
+  },
+  {
+    "path": "materials/icons/redrawn/imag2icon.png",
+    "size": 700228,
+    "crc": 4002570921,
+    "sha256": "e770378d0c16ed47142062d8656f93d6326efbd2a9555b845c347356aedfba7b"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/redrawn_bendy/cardboard/material.vmt",
+    "size": 222,
+    "crc": 3068356546,
+    "sha256": "dad3c280086050be42d147141070f01a91506f2279a8f396b59d7296abb24c3e"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/redrawn_bendy/glovebaked.vmt",
+    "size": 520,
+    "crc": 1931334834,
+    "sha256": "60d18a12e4c1fb3f6c08aa22e4862dc105a4ce4c9586573c96cf992fceec5a34"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/redrawn_bendy/cardboard/cardboard.vmt",
+    "size": 107,
+    "crc": 4150930468,
+    "sha256": "eb70cbd13606307128e56de78a3125b2726edfb7682bf35d54e45169fd4c63ed"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/redrawn_bendy/headbaked.vmt",
+    "size": 517,
+    "crc": 2475094592,
+    "sha256": "13f1c68df9fd3327e085265f7a39487696d4887874a7cccba2703e09a2cf073b"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/redrawn_bendy/bowtiebaked_d.vtf",
+    "size": 699288,
+    "crc": 782718049,
+    "sha256": "815b009c930648376ad1930ade1f98baad3617a3ff2439e26597a6ae6352976d"
+  },
+  {
+    "path": "materials/icons/redrawn/inkbuttonicon.png",
+    "size": 690517,
+    "crc": 2712118785,
+    "sha256": "43943f4a08f7e8bc2bb88eb82b7d41ad0617489b575abe3edd4a0e5a33ca48ac"
+  },
+  {
+    "path": "materials/icons/redrawn/inkoverlay.png",
+    "size": 1275302,
+    "crc": 120527375,
+    "sha256": "057493bfa704ea0a1d51319a1b95b1abec33a0f779fa5b0595c83d96fffb85a9"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/redrawn_bendy/bloodthing.vtf",
+    "size": 1398352,
+    "crc": 512606129,
+    "sha256": "4c441efcde00920591d15787ab84db26fd7ecd1cb37a46d7988ba0ed1b328596"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/redrawn_bendy/cardboard/cardboard.vtf",
+    "size": 1398352,
+    "crc": 1922422413,
+    "sha256": "af4d8dd7b5d02160088fec7196883b9d7e5d23479a44fdfefc3fe76148d0203e"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/redrawn_bendy/inkbaked.vmt",
+    "size": 521,
+    "crc": 1292038042,
+    "sha256": "9e0f08f953a3779b6cc823f9150d9850759b69c5dfacadb649c63fe4c1bea7ee"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/redrawn_bendy/material.vmt",
+    "size": 209,
+    "crc": 2561822598,
+    "sha256": "717af69be25e85d4e330a8540c5796a0d7aff928c7fcddeccf73d296131f5d0e"
+  },
+  {
+    "path": "materials/icons/redrawn/imag3icon.png",
+    "size": 1122674,
+    "crc": 1889216252,
+    "sha256": "cccf44d05990544bab3891a69aece352daf0cb86859145702ec328eadb590489"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/redrawn_bendy/buttonbaked_d.vtf",
+    "size": 43928,
+    "crc": 1108653278,
+    "sha256": "df5f4dc4497ef2b70257f16e3420f6f1430222bc5bb1a9289d762792ee94a9c4"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/redrawn_bendy/teethbaked.vmt",
+    "size": 518,
+    "crc": 3326253246,
+    "sha256": "9e49e0cfa5bd1cb2760e3ce7472a375989b62ec2f329f016d37e87482d7acd7a"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/redrawn_bendy/teethbaked.vtf",
+    "size": 87632,
+    "crc": 2850583394,
+    "sha256": "671c51eee53f75c3edf9dcef7cbedb6b663f894d54b1ec6acf038e44ce62fae8"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/redrawn_bendy/inkbaked_n.vtf",
+    "size": 699288,
+    "crc": 2313771470,
+    "sha256": "1616d8a352644dffac32dae245102d7540d00357f66cb60cf3222fddf64add34"
+  },
+  {
+    "path": "models/gentoi/anologhorror/cardboard_redrawn.mdl",
+    "size": 1812,
+    "crc": 1737939607,
+    "sha256": "7cc0e4f803a64e277dab5d1186b3c3ab3569139ceada5118ab239cd775a9e0e8"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/redrawn_bendy/cardboard/cardboardinky.vtf",
+    "size": 1398352,
+    "crc": 1463071323,
+    "sha256": "878d33e714efe7b88797fafb41ab8be422ccce5ad0949588dea9a9eed7cda02c"
+  },
+  {
+    "path": "models/gentoi/anologhorror/cardboard_redrawn.dx90.vtx",
+    "size": 8965,
+    "crc": 3972967455,
+    "sha256": "1988ac5bcd591bd46c6f89dc77ec3fc5c31efca34f666af457533d71aed03d67"
+  },
+  {
+    "path": "models/gentoi/anologhorror/cardboard_redrawn.phy",
+    "size": 3854,
+    "crc": 198743781,
+    "sha256": "c723e1b7358d046c52bc267592d4121df66fd4c503c7a5a5e3cbbd02c14783d7"
+  },
+  {
+    "path": "models/gentoi/anologhorror/inkplane_redrawn.dx90.vtx",
+    "size": 454,
+    "crc": 2633563961,
+    "sha256": "49088e8a0839d42117f966d207830113707a80c99da5648380ff6ad6193a2fff"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/redrawn_bendy/glovebaked_d.vtf",
+    "size": 699288,
+    "crc": 339714184,
+    "sha256": "fdf3b8f3061aaf54517a5aaa79f31fd2a4caf009080fbc5dae0537a7b2a1b0ad"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/redrawn_bendy/headbake_d.vtf",
+    "size": 699288,
+    "crc": 3382158294,
+    "sha256": "c3012d1bd51f5358defad1e77d3808cc88afe5a94b6cf68d7a8f4300ce51ef49"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/redrawn_bendy/inkbaked_d.vtf",
+    "size": 699288,
+    "crc": 244559050,
+    "sha256": "efbf6d622703bdbcaa2f88e091489a5eb9e9dd263407f6f1567c8de9cb6e4d52"
+  },
+  {
+    "path": "models/gentoi/anologhorror/inkpuddle.dx90.vtx",
+    "size": 253,
+    "crc": 37342923,
+    "sha256": "9338118dd7bc3f0ebee61d6e93a2b572efab2fcda61b850ba5526c6277e68ef5"
+  },
+  {
+    "path": "models/gentoi/anologhorror/fakecardboard_redrawn.mdl",
+    "size": 1816,
+    "crc": 182246898,
+    "sha256": "d8a05b12e63986a41dd05f1bf1c7f380fb8ad686b8c3f0cdca2fc0bfa6e8c1e5"
+  },
+  {
+    "path": "models/gentoi/anologhorror/fakecardboard_redrawn.dx90.vtx",
+    "size": 8965,
+    "crc": 4145737860,
+    "sha256": "90ea500821ca72e5eb221d3707bd76a8ae9071eeb2e9a2b572d6e0935321d28f"
+  },
+  {
+    "path": "models/gentoi/anologhorror/inkpuddle.vvd",
+    "size": 576,
+    "crc": 3812450040,
+    "sha256": "3f2adcdff060ea96ab1c9f1263e5403d5698277af916e5e78f5b1555de093153"
+  },
+  {
+    "path": "materials/pills/pill_redrawnbendy_ah.png",
+    "size": 520185,
+    "crc": 1429969826,
+    "sha256": "d68bc8f5d674f46473f0f93a4560718ad512365b7219201e3af86d730bcadd96"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/redrawn_bendy/shared.vtf",
+    "size": 1398352,
+    "crc": 2603907812,
+    "sha256": "d152fcf4dcf48b3868275edfc6c92782ae760a0daf0dfc04631274199cc8bc35"
+  },
+  {
+    "path": "models/gentoi/anologhorror/inkplane_redrawn.mdl",
+    "size": 1808,
+    "crc": 2173744626,
+    "sha256": "6daae2dc565bba032314384fc8e2d876e10fbbb1d3deece995c5f242d70d4a15"
+  },
+  {
+    "path": "models/gentoi/anologhorror/inkplane_redrawn.vvd",
+    "size": 1152,
+    "crc": 4167972203,
+    "sha256": "08e88b5138949a6783d17bff0d297d5460e56f5896ee8ce4a260dfec517b8331"
+  },
+  {
+    "path": "models/gentoi/anologhorror/fakecardboard_redrawn.vvd",
+    "size": 44096,
+    "crc": 2671364666,
+    "sha256": "b4ded454dc93dd5d2375098caa3073af1b98d36366975457f1d519b249a7978f"
+  },
+  {
+    "path": "models/gentoi/anologhorror/inkpuddle.mdl",
+    "size": 1792,
+    "crc": 691372570,
+    "sha256": "8d11a4dae89382b8950a5ec51539ca4462a641ab3cfa8e9f028a6302a7bd5801"
+  },
+  {
+    "path": "models/gentoi/anologhorror/cardboard_redrawn.vvd",
+    "size": 44096,
+    "crc": 3532684161,
+    "sha256": "4e6200873e90b287daec26b3e66d231c467a60ff02a10435a4f0328a41871e83"
+  },
+  {
+    "path": "sound/redrawn/bendy/redrawn_grasp.wav",
+    "size": 540406,
+    "crc": 1342646491,
+    "sha256": "cb5e853619c53e23477e9a6aa810c6fe47c2138eb0343f562b45db309376ddb2"
+  },
+  {
+    "path": "models/gentoi/anologhorror/redrawn_bendy.phy",
+    "size": 168891,
+    "crc": 1836230797,
+    "sha256": "28674108ee4d81fa85c845062a83bc20edc527f5d6ef665b5cb05650086ba537"
+  },
+  {
+    "path": "models/gentoi/anologhorror/redrawn_bendy.dx90.vtx",
+    "size": 305372,
+    "crc": 815161682,
+    "sha256": "5272d84432206231a161a357200f3c8a7d480e0b45e374a51dc1a76e707625e8"
+  },
+  {
+    "path": "models/gentoi/anologhorror/redrawn_bendy.mdl",
+    "size": 625764,
+    "crc": 4221894291,
+    "sha256": "41128a0b25f9ce3949dd5fec0116927a7275b96d3c1f420bceffc499f23e3044"
+  },
+  {
+    "path": "models/gentoi/anologhorror/redrawn_bendy.vvd",
+    "size": 1212928,
+    "crc": 1260632537,
+    "sha256": "0e17a7a128ce89d33196030256a2666e1f6046c56b969763dba4db83c60e2ec4"
+  },
+  {
+    "path": "sound/redrawn/bendy/redrawn_cardboardplacement.wav",
+    "size": 683734,
+    "crc": 2626628369,
+    "sha256": "f07779b4b342e817bdb752f3d1f1ba0fb7378b8639b1ab7607ae5e22ccc0b3d2"
+  },
+  {
+    "path": "sound/redrawn/bendy/redrawn_inkportalloop.wav",
+    "size": 1699992,
+    "crc": 436294745,
+    "sha256": "59965a66cc2742caa5e7f2fedf2611b56d29bb68a78dde726eb2babc504816f1"
+  },
+  {
+    "path": "sound/redrawn/bendy/redrawn_inkportalexit.wav",
+    "size": 585806,
+    "crc": 336152038,
+    "sha256": "861e6cfc9ca81d94a8fb7d75e551a7520577a6ba976fe195d189e0fd4374bd02"
+  },
+  {
+    "path": "sound/redrawn/bendy/redrawn_inkportalenter.wav",
+    "size": 749882,
+    "crc": 3100915756,
+    "sha256": "932550f015f9229d45b604c48d85a7224067c5afc3117d42ae05c2e5e0a584cc"
+  },
+  {
+    "path": "sound/redrawn/bendy/redrawn_inkportalsummon.wav",
+    "size": 738858,
+    "crc": 3935485116,
+    "sha256": "9f9895d8c98b6b5f8bacac2ab830156066e2e93f65a9a3f2b4cb80ef0a4ca4aa"
+  },
+  {
+    "path": "sound/redrawn/bendy/redrawn_steprunning2.wav",
+    "size": 220682,
+    "crc": 1180681750,
+    "sha256": "9d87a18dbeeb1a36fa136b0ca601c7657fbe5d0f896b579996d78f3560666555"
+  },
+  {
+    "path": "sound/redrawn/bendy/redrawn_step1.wav",
+    "size": 242734,
+    "crc": 1972467056,
+    "sha256": "7b95440a77b2abd63579d3f25fbc8900308243ad8c312d43615fff06d13997eb"
+  },
+  {
+    "path": "sound/redrawn/bendy/redrawn_step3.wav",
+    "size": 275806,
+    "crc": 79495061,
+    "sha256": "96e151d8fc638170c8d8c3e20159fd0a0ff481cafe03c5324cd3ff10b281c3d9"
+  },
+  {
+    "path": "sound/redrawn/bendy/redrawn_step2.wav",
+    "size": 253758,
+    "crc": 228381544,
+    "sha256": "4df04913b22459fdd89163ddd7b12c6b46c85139fd74f8faab3e35fad0613dad"
+  },
+  {
+    "path": "sound/redrawn/bendy/redrawn_step5.wav",
+    "size": 286830,
+    "crc": 342069873,
+    "sha256": "1c5b6c86f6b96ab36218bc4923b60b2e5147fd83d1b5760d18da02855a3bb84e"
+  },
+  {
+    "path": "sound/redrawn/bendy/redrawn_steprunning1.wav",
+    "size": 198630,
+    "crc": 21098457,
+    "sha256": "853b726921f493b2b800d5d6c1a9b00d0c9cdc9d6f6feca7988a777e01ec3e92"
+  },
+  {
+    "path": "sound/redrawn/bendy/redrawn_step4.wav",
+    "size": 253758,
+    "crc": 1817281174,
+    "sha256": "1a90a046c216063b07ee9f37daf458460c5e40fe211bff9d4cd32a38c1446b31"
+  },
+  {
+    "path": "sound/redrawn/bendy/redrawn_idleloop.wav",
+    "size": 3194252,
+    "crc": 3360882690,
+    "sha256": "c6cb1674fda43db04a3d806d76aae04d24555c0c3fd45355ca6624f19265a4e7"
+  },
+  {
+    "path": "sound/redrawn/bendy/redrawn_steprunning4.wav",
+    "size": 264782,
+    "crc": 3773873319,
+    "sha256": "57a8ead154d3d89b5673781263ea62fe53bad1d39bf385cc630e3d95a4ec911d"
+  },
+  {
+    "path": "sound/redrawn/bendy/redrawn_killanim.wav",
+    "size": 1477534,
+    "crc": 1551173442,
+    "sha256": "68adb163b51b3362482074bf9cfc169e979447d5ec2ad4f28b3faec4b1c240c1"
+  },
+  {
+    "path": "sound/redrawn/bendy/redrawn_steprunning3.wav",
+    "size": 220682,
+    "crc": 890045286,
+    "sha256": "f906db7f5991dc31a2e3f11bbe2d61ca1d8e9de89f21397595f55f263536bc4e"
+  }
+]

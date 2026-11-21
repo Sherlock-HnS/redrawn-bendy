@@ -1,0 +1,19 @@
+"VertexlitGeneric"
+{
+    "$basetexture" "models/gentoi/anologhorror/redrawn_bendy/HeadBake_d"
+    "$bumpmap"     "models/gentoi/anologhorror/redrawn_bendy/shared"
+    "$nodecal" "1"
+    "$phong" "1"
+    "$phongboost"    "0"
+    "$phongexponent" "25"
+    "$phongfresnelranges"    "[0.1 0.23 0.945]"
+    "$phongdisablehalflambert"    "0"
+    "$color2" "[1 1 1]"
+
+    "$envmap" "env_cubemap"
+    "$normalmapalphaenvmapmask"        "1"
+    "$envmapfresnel"    "1"
+
+    "$envmaptint"        0
+$nocull 1
+}

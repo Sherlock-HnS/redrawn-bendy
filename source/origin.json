@@ -1,0 +1,22 @@
+{
+  "id": "3610339609",
+  "name": "redrawn-bendy",
+  "title": "[PILL PACK] Redrawn Bendy",
+  "author": "Nick Vogel",
+  "status": "extracted_verified",
+  "acquisition": "existing_steam_client_installation",
+  "steamcmd_download_completed": false,
+  "source_workshop_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3610339609",
+  "source_archive_sha256": "8db2e726c9baa68d5af4531b362d85dd0dd0fc59d38669ad9e415f0572d3a56c",
+  "gma_header": {
+    "title": "[PILL PACK] Redrawn Bendy",
+    "description": "{\"title\":\"[PILL PACK] Redrawn Bendy\",\"type\":\"npc\",\"tags\":[\"roleplay\",\"scenic\",\"movie\"],\"ignore\":[\"ogg\"]}",
+    "author": "Author Name",
+    "steam_id": "0",
+    "timestamp": 1787403487
+  },
+  "files": 64,
+  "payload_bytes": 29165309,
+  "roundtrip_verified": true,
+  "packaging_exclusions": []
+}
