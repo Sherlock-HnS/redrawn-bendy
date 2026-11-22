@@ -1,4 +1,4 @@
-[PILL PACK] Redrawn Bendy
+# [PILL PACK] Redrawn Bendy
 
 ![Workshop preview](workshop-preview.jpg)
 
