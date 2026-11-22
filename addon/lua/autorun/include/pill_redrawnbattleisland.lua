@@ -60,13 +60,10 @@ hook.Add("OnEntityCreated", "Redrawn_gentoi_noodles_pill_initialize", function(e
 
 
                             if self.animFreeze and not self.plyFrozen then
-                                ply:SetWalkSpeed(ply:GetWalkSpeed() / 2)
-                                ply:SetRunSpeed(ply:GetWalkSpeed() / 2)
+                                self:ApplyMoveSpeed()
                                 self.plyFrozen = true
                             elseif not self.animFreeze and self.plyFrozen then
-                                local speed = self.formTable.moveSpeed or {}
-                                ply:SetWalkSpeed(speed.walk or 200)
-                                ply:SetRunSpeed(speed.run or speed.walk or 500)
+                                self:ApplyMoveSpeed()
                                 self.plyFrozen = nil
                             end
 
@@ -239,7 +236,7 @@ hook.Add("OnEntityCreated", "Redrawn_gentoi_noodles_pill_initialize", function(e
                             --water death
                             self.touchingWater = ply:WaterLevel() > 1
 
-                            if (self.formTable.damageFromWater and self.touchingWater) then
+                            if not SherlockHNS and self.formTable.damageFromWater and self.touchingWater then
                                 if self.formTable.damageFromWater == -1 then
                                     --self:PillDie()
                                     ply:Kill()
@@ -290,7 +287,7 @@ hook.Add("OnEntityCreated", "Redrawn_gentoi_noodles_pill_initialize", function(e
                             end
 
                             --charge
-                            if self:GetChargeTime() ~= 0 then
+                            if not SherlockHNS and self:GetChargeTime() ~= 0 then
                                 if ply:OnGround() then
                                     local charge = self.formTable.charge
                                     local angs = ply:EyeAngles()
@@ -643,7 +640,7 @@ hook.Add("SetupMove", "DisablePlayerMovement_gentoi_redrawn", function(ply, mv, 
         mv:SetButtons(0)
     end
 
-    if ply:GetNWBool("CardPuddleSlowed") then
+    if ply:GetNWBool("CardPuddleSlowed") and not IsValid(ply.pk_pill_ent) then
         mv:SetMaxClientSpeed(130) 
         mv:SetMaxSpeed(130)
     end
@@ -793,6 +790,7 @@ else
     }
     hook.Add("HUDPaint", "redrawnbendy_hudpaint", function()
 
+        if SherlockHNS then return end
         local ply = LocalPlayer()
         local pillentity = LocalPlayer().pk_pill_ent
         local screenW, screenH = ScrW(), ScrH()
@@ -1059,6 +1057,13 @@ local function racheljackietien_jumpscare(ply, ent, duration, customanimstuff)
                     break
                 end
             end
+        end
+
+        if SherlockHNS and IsValid(jumpscare_entity) and jumpscare_entity:IsPlayer() then
+            return pk_pills.playHNSJumpscare(ply, ent, jumpscare_entity, duration, {
+                camera = "gentoi_Redrawn_cam",
+                onStart = customanimstuff,
+            })
         end
 
         if jumpscare_entity ~= nil then
@@ -1443,6 +1448,7 @@ pk_pills.register('PIll_redrawnBendy_ah', {
                             cardPuddle:SetAngles(Angle(baseAng.p, baseAng.y + rotOffset, baseAng.r))
 
                             for _, ent in ipairs(ents.FindInSphere(cardPuddle:GetPos(), 190)) do
+                                if SherlockHNS and ent:IsPlayer() and not SherlockHNS.CanTarget(ent, ply) then continue end
                                 if IsValid(ent) and (ent:IsPlayer() or ent:IsNPC() or ent:IsNextBot()) then
                                     if ent.pk_pill_ent and IsValid(ent.pk_pill_ent) then continue end
                                     if ent:GetClass() == "pill_puppet" then continue end
@@ -2076,10 +2082,7 @@ pk_pills.register('PIll_redrawnBendy_ah', {
             end
 
             if IsValid(ply) and IsValid(ent) then
-                ply:SetWalkSpeed(speed.walk)
-                ply:SetRunSpeed(speed.run)
-                ply:SetCrouchedWalkSpeed(speed.ducked)
-                ply:SetJumpPower(speed.jumppower)
+                pk_pills.setCostumeMoveSpeed(ent, speed.walk, speed.run, speed.ducked, speed.jumppower)
             end
         end
     end,
@@ -2114,6 +2117,7 @@ pk_pills.register('PIll_redrawnBendy_ah', {
 
                 ent:SetNWInt("redrawn_abilityprvention", dur + CurTime() + 0.6 )
                 ent:SetNWInt("Ability3_cooldown", GetConVar("GentoiPills_redrawnbendy_GraspCooldown"):GetFloat() + dur + CurTime() )
+                pk_pills.setHNSCooldown(ent, "grasp", ent:GetNWInt("Ability3_cooldown") - CurTime())
                 ply:SetNWInt("DisablePlayerMovement_gentoi_redrawn_stun", dur+CurTime())
             end
 
@@ -2135,6 +2139,7 @@ pk_pills.register('PIll_redrawnBendy_ah', {
 
                 ent:SetNWInt("redrawn_abilityprvention", dur+CurTime())
                 ent:SetNWInt("Ability2_cooldown", GetConVar("GentoiPills_redrawnbendy_CardboardCooldown"):GetFloat() + dur +CurTime() )
+                pk_pills.setHNSCooldown(ent, "cardboard", ent:GetNWInt("Ability2_cooldown") - CurTime())
                 AdvancedPillSound({
                     stringe = "redrawn/bendy/Redrawn_cardboardplacement.wav",
                     soundLevel = 79
@@ -2233,6 +2238,7 @@ pk_pills.register('PIll_redrawnBendy_ah', {
 
                                 table.insert(ent.InkTable_portal, dynamic)
                                 ent:SetNWInt("Ability1_cooldown", GetConVar("GentoiPills_redrawnbendy_DeployPuddlesCooldown"):GetFloat() +CurTime() )       
+                                pk_pills.setHNSCooldown(ent, "puddles", ent:GetNWInt("Ability1_cooldown") - CurTime())
 
                                 ent:SetNWInt("PortalCount", #ent.InkTable_portal)
                             end
@@ -2316,7 +2322,7 @@ pk_pills.register('PIll_redrawnBendy_ah', {
             if ent:GetNWInt("DisablePlayerMovement_gentoi_redrawn_stun") > CurTime() then return end
             if ent:GetNWBool("EnterPortal_redrawn") then return end
             local dur = ent:GetPuppet():SequenceDuration(ent:GetPuppet():LookupSequence("Bendy_Kill Animation 232"))
-            racheljackietien_jumpscare(
+            return racheljackietien_jumpscare(
                 ply,
                 ent,
                 dur,
@@ -2349,4 +2355,18 @@ pk_pills.register('PIll_redrawnBendy_ah', {
 
 
     end
-})
+}, function(form)
+    -- The legacy damage branches are for Sandbox and NPCs.
+    form.hnsKillAPI = true
+    form.hnsAbilities = {
+        { id = "attack", name = "Ataque", key = IN_ATTACK, OnUse = form.attack.func },
+    }
+    form.attack, form.attack2, form.reload = nil, nil, nil
+    pk_pills.bindHNSButtons(form, "noodles_redrawn_gentoi_keybinds", {
+        { id = "grasp", name = "Agarrar", button = KEY_3, keyLabel = "3" },
+        { id = "cardboard", name = "Recorte de papelão", button = KEY_2, keyLabel = "2" },
+        { id = "puddles", name = "Poças de tinta", button = KEY_1, keyLabel = "1" },
+        { id = "portal", name = "Entrar no portal", button = KEY_E, keyLabel = "E" },
+        { id = "shiftlock", name = "Travar corrida", button = KEY_R, keyLabel = "R" },
+    })
+end)
