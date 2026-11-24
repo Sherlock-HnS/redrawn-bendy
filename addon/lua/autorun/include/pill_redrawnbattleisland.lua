@@ -1965,6 +1965,7 @@ pk_pills.register('PIll_redrawnBendy_ah', {
                         if (ent2:IsPlayer() or ent2:IsNextBot() or ent2:IsNPC()) and ent2:Health() > 0 then
                             if ent2 == ply then continue end
                             if ent2:IsPlayer() and ent2:Team() == TEAM_SPECTATOR then continue end
+                            if SherlockHNS and ent2:IsPlayer() and not SherlockHNS.CanTarget(ent2, ply) then continue end
 
 
                             local trace = util.TraceLine({start = pos2 + Vector(0,0,20) + ply:GetForward() * tranceamount, endpos = ent2:LocalToWorld(Vector(0,0,40)), filter = {ent, ply}, mask = MASK_VISIBLE})
